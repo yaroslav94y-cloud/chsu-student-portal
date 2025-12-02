@@ -38,17 +38,23 @@ export default function Home() {
           {/* Декоративный круг на фоне */}
           <div className="absolute -bottom-10 -right-10 h-32 w-32 rounded-full bg-white opacity-10 group-hover:scale-150 transition-transform duration-500" />
         </Link>
-        
 
-        {/* КАРТОЧКА: ГАЙД (Пока неактивная заглушка) */}
-        <div className="group relative overflow-hidden rounded-3xl bg-gray-100 p-8 text-gray-400 border-2 border-dashed border-gray-300 cursor-not-allowed">
+        {/* КАРТОЧКА: FAQ (Активная) */}
+        <Link 
+          href="https://www.chsu.ru/raspisanie/?p_p_id=TimeTable_WAR_TimeTableportlet&p_p_lifecycle=0&p_p_state=maximized&p_p_state_rcv=1&p_p_col_id=column-1&p_p_col_count=1&ysclid=milwxq91pu774872204"
+          className="group relative overflow-hidden rounded-3xl bg-red-600 p-8 text-white shadow-xl transition-transform hover:scale-[1.02] hover:shadow-2xl"
+        >
           <div className="relative z-10">
-            <BookOpen size={48} className="mb-4 opacity-50" />
-            <h2 className="text-2xl font-bold mb-2">Гайд выживания</h2>
-            <p className="text-sm">Скоро: как получить справку и где взять зачетку.</p>
+            <Search size={48} className="mb-4 opacity-80" />
+            <h2 className="text-2xl font-bold mb-2">Расписание занятий</h2>
+            <p className="text-red-100 opacity-90">
+             Узнать расписание своей группы, преподавателя или понять, какая аудитория свободна.
+           </p>
           </div>
-        </div>
-
+          {/* Декоративный круг на фоне */}
+          <div className="absolute -bottom-10 -right-10 h-32 w-32 rounded-full bg-white opacity-10 group-hover:scale-150 transition-transform duration-500" />
+        </Link>         
+        
         {/* КАРТОЧКА: FAQ (Активная) */}
         <Link 
           href="/faq"
@@ -63,7 +69,16 @@ export default function Home() {
           </div>
           {/* Декоративный круг на фоне */}
           <div className="absolute -bottom-10 -right-10 h-32 w-32 rounded-full bg-white opacity-10 group-hover:scale-150 transition-transform duration-500" />
-        </Link>
+        </Link>        
+
+        {/* КАРТОЧКА: ГАЙД (Пока неактивная заглушка) */}
+        <div className="group relative overflow-hidden rounded-3xl bg-gray-100 p-8 text-gray-400 border-2 border-dashed border-gray-300 cursor-not-allowed">
+          <div className="relative z-10">
+            <BookOpen size={48} className="mb-4 opacity-50" />
+            <h2 className="text-2xl font-bold mb-2">Гайд выживания</h2>
+            <p className="text-sm">Скоро: как получить справку и где взять зачетку.</p>
+          </div>
+        </div>
 
       </div>
 
